@@ -1,0 +1,14 @@
+# Ignore virtual environments
+env_cctv_311/
+env_cctv_310/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore local screenshots and personal face data
+hasil_screenshot/*
+!hasil_screenshot/.gitkeep
+
+wajah database/*
+!wajah database/.gitkeep
