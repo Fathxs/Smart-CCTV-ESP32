@@ -15,15 +15,18 @@ if 'pkg_resources' not in sys.modules:
         return ""
     pkg_mock.resource_filename = resource_filename
     sys.modules['pkg_resources'] = pkg_mock
-# =================================================================
+
 
 import cv2
 import face_recognition
 import numpy as np
 import time
 
-
-cap = cv2.VideoCapture("http://192.168.1.5:81/stream")
+# =================================================================
+# CHANGE THE URL BELOW TO MATCH YOUR ESP32-CAM IP ADDRESS!
+# Example: "http://192.168.1.5:81/stream"
+# =================================================================
+cap = cv2.VideoCapture("http://YOUR_ESP32_IP:81/stream")
 
 database_path = "wajah database"
 screenshot_path = "hasil_screenshot"
