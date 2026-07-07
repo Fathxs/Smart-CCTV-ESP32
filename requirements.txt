@@ -4,4 +4,4 @@ face-recognition==1.3.0
 face_recognition_models==0.3.0
 numpy==2.5.0
 opencv-python==4.13.0.92
-pillow==12.2.0ss
+pillow==12.2.0
