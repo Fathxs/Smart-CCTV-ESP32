@@ -36,14 +36,25 @@ To make the ESP32-CAM stream video, we will use the default Camera Web Server ex
    //#define CAMERA_MODEL_M5STACK_ESP32CAM
    //#define CAMERA_MODEL_M5STACK_UNITCAM
    #define CAMERA_MODEL_AI_THINKER // <-- UNCOMMENT THIS LINE
+   ```
 
 4. Enter your Wi-Fi credentials in the provided variables:
+   
+   ```cpp
    const char* ssid = "YOUR_WIFI_SSID";
    const char* password = "YOUR_WIFI_PASSWORD";
-5. Click Upload to flash the code into your ESP32-CAM.
-6. Once the upload is complete, open the Serial Monitor and set the baud rate to 115200.
-7. Press the RST (Reset) button on your ESP32-CAM or the downloader board.
-8. The Serial Monitor will display an IP Address (e.g., http://192.168.1.5). Copy this IP Address and paste it into the cctv_pintar.py script to connect the AI program to your camera.
+   ```
+
+6. Click Upload to flash the code into your ESP32-CAM.
+7. Once the upload is complete, open the Serial Monitor and set the baud rate to 115200.
+8. Press the RST (Reset) button on your ESP32-CAM or the downloader board.
+9. The Serial Monitor will display an IP Address (e.g., http://192.168.1.5). Copy this IP Address and paste it into the cctv_pintar.py script to connect the AI program to your camera.
+
+## 📸 Hardware Components
+
+Here are the actual hardware components I used for this Smart CCTV project. It consists of the **ESP32-CAM** module and the downloader board (FTDI programmer) used to upload the code.
+
+<img src="esp32.jpeg" alt="Hardware Used" width="400">
 
 ## 📝 Note
 This project integrates the `face_recognition` library by Adam Geitgey.
