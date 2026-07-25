@@ -38,7 +38,7 @@ if not os.path.exists(database_path):
 if not os.path.exists(screenshot_path):
     os.makedirs(screenshot_path)
 
-# --- Memuat Database Wajah ---
+
 known_face_encodings = []
 known_face_names = []
 
